@@ -36,7 +36,8 @@ var pagemoment = {
     toCopy: function () {
         $('#copy').on('click', function () {
             var that = $(this).parent().parent().find('.m-right')
-            var htm = that.text()
+            //.html()返回dom元素，会将符号转义；.text()返回文本元素，原样返回。
+          var htm = that.text()
             $(this).attr('data-clipboard-text',htm)
         })
         new Clipboard('#copy').on('success', function () {
