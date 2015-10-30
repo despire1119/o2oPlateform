@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>苏宁加盟</title>
+    <meta name="keywords" content="项目关键词"/>
+    <meta name="description" content="项目描述"/>
+    <script>
+        var sn = sn || {}
+    </script>
+
+    <!-- 引入全站公用资源文件 -->
+    <!--#include file="/include/resources.shtml"-->
+
+    <!-- 引入项目css资源文件,并配置构建地址演示 -->
+    <!-- build:css ./assets/css/style.css -->
+    <link rel="stylesheet" href="css/style.scss"/>
+    <!-- endbuild -->
+</head>
+<!--[if lt IE 7 ]>
+<body class="ie ie6"><![endif]-->
+<!--[if IE 7 ]>
+<body class="ie ie7"><![endif]-->
+<!--[if IE 8 ]>
+<body class="ie ie8"><![endif]-->
+<!--[if IE 9 ]>
+<body class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="body-bg"><!--<![endif]-->
+<script>
+    /*
+     * 宽窄屏切换
+     * */
+    var bigscreen = false;
+    if (screen.width >= 1200) {
+        bigscreen = true;
+        var bodyTag = document.getElementsByTagName("body")[0],
+                bodyClassName = bodyTag.getAttribute("className") || bodyTag.getAttribute("class");
+        bodyClassName = bodyClassName ? bodyClassName + " " : "";
+        bodyTag.className = bodyClassName + "root1200";
+    }
+</script>
+<!-- 此处引入公用头部 -->
+<!--#include file="/include/toolbar.shtml"-->
+
+<!--begin-->
+<div class="o-header">
+    <div class="wrapper clearfix">
+        <div class="flag"></div>
+        <div class="list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">校园先锋</a></li>
+                <li><a href="">乡约苏宁</a></li>
+                <li><a href="">便利社区</a></li>
+                <i></i>
+                <li class="on"><a href="">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="user-main clearfix wrapper">
+    <div class="wrapper-left">
+        <div class="user-head"><i></i>个人中心</div>
+        <ul class="clearfix">
+            <li><a href="javascript:;">返佣明细</a><i></i></li>
+            <li ><a href="javascript:;">商品推广</a><i></i></li>
+            <li class="current"><a href="javascript:;">我的选品池</a><i></i></li>
+        </ul>
+    </div>
+
+
+    <div class="wrapper-right">
+        <div class="content-wrap ">
+            <!-- 总数 -->
+            <div class="total-prod">全部商品(0)</div>
+            <div class="split-line"></div>
+            <div class="content ">
+                <!-- 没有商品 -->
+                <div class="empty-content clearfix">
+                    <!-- 图片 -->
+                    <div class="lion-face"></div>
+                    <div class="empty-tips">
+                        <p class="tips1">嗷~你选品池还是空空的，快去添加商品到选品池吧~</p>
+                        <p class="tips2">去<a href="#" title="商品推广">商品推广</a>看看</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--end-->
+
+<!-- 需要构建的前景图片，需要设置baseurl，默认./assets/就可以，不需要构建的资源不需要加baseurl -->
+
+<!-- 此处引入公用尾部 -->
+<!--#include file="/include/footer.shtml"-->
+
+<!-- 引入项目js资源文件,并配置构建地址演示 -->
+<!-- build:js ./assets/js/jquery.min.js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- endbuild -->
+<!-- build:js ./assets/js/layout.js -->
+<script type="text/javascript" src="js/layout.js"></script>
+<!-- endbuild -->
+<script>
+    $('.o-top').fadeIn(500);
+</script>
+</body>
+</html>

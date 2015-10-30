@@ -1,0 +1,31 @@
+/* 分页 */
+.sn-page{float: right; margin-top: 20px; padding-bottom: 60px; color:#666;font: 14px tahoma,arial,\5b8b\4f53;vertical-align:middle;zoom:1;}
+.sn-page input{margin:0;padding:0;color:#666;font: 14px tahoma,arial,\5b8b\4f53;vertical-align:middle;zoom:1;}
+.sn-page:after{clear:both;content:" ";display:block;font-size:0;height:0;visibility:hidden}
+.sn-page a,.sn-page span.sn-page-prev,.sn-page span.sn-page-next{text-decoration:none;color:#666;margin:0 3px;display:inline-block;vertical-align:middle;height:30px;line-height:30px;*display:inline;*zoom:1;}
+.sn-page-prev,.sn-page-next,.sn-page-goto{background-color:#F9F9F9;background:-webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#f4f4f4));background:-moz-linear-gradient(top,#ffffff,#f4f4f4);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4');background:-o-linear-gradient(top,#ffffff,#f4f4f4);background:linear-gradient(top,#ffffff,#f4f4f4);padding:0 8px;border:1px solid #d7d7d7;box-shadow:0 0 0 1px #fff inset;}
+.sn-page-prev:hover,.sn-page-next:hover,.sn-page-goto:hover{border-color:#999;color:#666}
+.sn-page .sn-page-prev{margin:0 3px 0 0}
+.sn-page a.sn-page-item{background:#fff;font-weight:700;padding:0 11px;border: 1px solid #d7d7d7;}
+.sn-page a.sn-page-current{border: 1px solid #fff;}
+.sn-page a.sn-page-item:hover{color:#f70;}
+.sn-page a.sn-page-current:hover{color:#666;}
+a.sn-page-prev:hover,a.sn-page-next:hover{text-decoration:none;color:#666}
+a.sn-page-prev span,a.sn-page-next span{float:left;cursor:pointer;}
+.sn-page-prev i,.sn-page-next i{margin-top:9px;}
+.sn-page-prev i{margin-right:8px;border-right:6px solid #333;}
+.sn-page-next i{margin-left:8px;border-left:6px solid #333;}
+.sn-page-info{line-height:24px;margin-right:5px;height:24px}
+.sn-page-ellipsis{margin:0 5px;line-height:16px;font-weight:700}
+.sn-page-which input{height:20px;line-height:20px;padding:5px 6px;width:22px;border:1px solid #d7d7d7;}
+.sn-page-bold{font-weight:700;padding:0 8px}
+.sn-page span.sn-page-prev,.sn-page span.sn-page-next{color:#b1b1b1;box-shadow:none;background:#fff;border-color:#d7d7d7;filter:none}
+span.sn-page-prev i{margin-right:8px;border-right:6px solid #b1b1b1;}
+span.sn-page-next i{margin-left:8px;border-left:6px solid #b1b1b1;}
+
+/* arrow */
+.sn-arrow-up,.sn-arrow-down,.sn-arrow-right,.sn-arrow-left{display:inline-block;float:left;line-height: 0;font-size: 0;overflow: hidden; }
+.sn-arrow-up{border-left:6px solid transparent; border-right:6px solid transparent; _border-left:6px solid black; _filter:chroma(color=black); _border-right:6px solid black; _filter:chroma(color=black); border-bottom:6px solid #ccc; width:0; height:0;}
+.sn-arrow-down{border-left:6px solid transparent; border-right:6px solid transparent; _border-left:6px solid black; _filter:chroma(color=black); _border-right:6px solid black; _filter:chroma(color=black); border-top:6px solid #ccc; width:0; height:0;}
+.sn-arrow-left{border-top:transparent 6px solid; border-bottom:transparent 6px solid; _border-top:6px solid black; _filter:chroma(color=black); _border-bottom:6px solid black; _filter:chroma(color=black); border-left:6px solid #ccc; width:0; height:0;}
+.sn-arrow-right{border-top:transparent 6px solid; border-bottom:transparent 6px solid; _border-top:6px solid black; _filter:chroma(color=black); _border-bottom:6px solid black; _filter:chroma(color=black); border-right:6px solid #ccc; width:0; height:0;}
