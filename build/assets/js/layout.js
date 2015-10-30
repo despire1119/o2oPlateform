@@ -1,9 +1,9 @@
 var pagemoment = {
     toHover: function () {
         $('.sale-sort').find('.goods').hover(function () {
-            $(this).addClass('on').find('.cart').removeClass('hide').css('z-index','1000')
+            $(this).addClass('on').find('.cart').removeClass('hide').css('z-index', '1000')
         }, function () {
-            $(this).removeClass('on').find('.cart').addClass('hide').css('z-index','1')
+            $(this).removeClass('on').find('.cart').addClass('hide').css('z-index', '1')
         })
         $('.empty-tips').find('input').hover(function () {
             $(this).addClass('lion-on')
@@ -18,26 +18,26 @@ var pagemoment = {
     },
     toCover: function () {
         $('.t-spread').on('click', function () {
-            $('html').css('overflow','hidden')
+            $('html').css('overflow', 'hidden')
             $('.cover').show()
             $('#sp-pop').show()
         })
         $('.t-pond').on('click', function () {
-            $('html').css('overflow','hidden')
+            $('html').css('overflow', 'hidden')
             $('.cover').show()
             $('#com-pop').show()
         })
         $('.cover,.to-close,.continue').on('click', function () {
             $('.cover,#sp-pop,#com-pop').hide()
             $('#copy').removeClass('copied').find('em').html('复制链接')
-            $('html').css('overflow','auto')
+            $('html').css('overflow', 'auto')
         })
     },
     toCopy: function () {
         $('#copy').on('click', function () {
             var that = $(this).parent().parent().find('.m-right')
             var htm = that.text()
-            $(this).attr('data-clipboard-text',htm)
+            $(this).attr('data-clipboard-text', htm)
         })
         new Clipboard('#copy').on('success', function () {
             $('#copy').addClass('copied').find('em').html('复制成功')
@@ -55,63 +55,61 @@ var pagemoment = {
 var layout = layout || {};
 
 //首页滑动效果
-layout.slideUp = function(){
+layout.slideUp = function () {
     var oMain = $(".o-main"),
         oHead = $(".o-header");
     //鼠标往上滚 覆盖上去
-    var scrollFunc = function(){
+    var scrollFunc = function () {
         //滚动的高度
         var scrollTop = $(window).scrollTop();
-        if(scrollTop==0){
+        if (scrollTop == 0) {
             //头部不悬浮
             oHead.removeClass("suspend");
-        }else{
+        } else {
             //头部悬浮
             oHead.addClass("suspend");
-            oMain.stop().animate({"marginTop":-scrollTop},200);
+            oMain.stop().animate({"marginTop": -scrollTop}, 200);
         }
-        
-        
 
 
     };
     /*注册事件*/
-    if(document.addEventListener){
-     document.addEventListener('DOMMouseScroll',scrollFunc,false);
+    if (document.addEventListener) {
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
     }//W3C
-    window.onmousewheel=document.onmousewheel=scrollFunc;//IE/Opera/Chrome/Safari
+    window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome/Safari
 };
 
 //选品池样式
-layout.userStyle = function(){
+layout.userStyle = function () {
     var delBtn = $(".del-prod"),//删除图标
         delDubble = $(".del-bubble"),
         prodLi = $(".prod-list li");
 
 
-    prodLi.hover(function(){
-        var _this =$(this);
+    prodLi.hover(function () {
+        var _this = $(this);
         _this.addClass("prod-hover").siblings().removeClass("prod-hover");
-    },function(){
-        var _this =$(this);
+    }, function () {
+        var _this = $(this);
         _this.removeClass("prod-hover");
     });
 
-    delBtn.hover(function(){
-        var _this =$(this),
+    delBtn.hover(function () {
+        var _this = $(this),
             bubbleDel = _this.parent().find(".del-bubble");//弹框
 
         bubbleDel.addClass("display_bubble");
-    },function(){
-        var _this =$(this),
+    }, function () {
+        var _this = $(this),
             bubbleDel = _this.parent().find(".del-bubble");//弹框
         bubbleDel.removeClass("display_bubble");
     });
-    delDubble.hover(function(){
-        var _this =$(this);
+    delDubble.hover(function () {
+        var _this = $(this);
         _this.addClass("display_bubble");
-    },function(){
-        var _this =$(this);
+    }, function () {
+        var _this = $(this);
         _this.removeClass("display_bubble");
     });
 
@@ -120,7 +118,7 @@ layout.userStyle = function(){
 
 
 //页面加载完成调用
-$(function(){
+$(function () {
     // layout.slideUp();
 
     //user.html
